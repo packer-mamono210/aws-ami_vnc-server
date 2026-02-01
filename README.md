@@ -1,1 +1,1 @@
-[![](https://github.com/packer-tm/aws-ami_redmine_install/workflows/build/badge.svg)](https://github.com/packer-tm/aws-ami_redmine_install/actions?query=workflow%3Abuild)
+[![CircleCI](https://dl.circleci.com/status-badge/img/gh/packer-mamono210/aws-ami_vnc-server/tree/master.svg?style=svg)](https://dl.circleci.com/status-badge/redirect/gh/packer-mamono210/aws-ami_vnc-server/tree/master)
