@@ -67,4 +67,9 @@ build {
     galaxy_file      = "./vnc-server/roles/requirements.yml"
     playbook_file    = "./vnc-server/install.yml"
   }
+
+  provisioner "ansible" {
+    galaxy_file      = "./docker/roles/requirements.yml"
+    playbook_file    = "./docker/install.yml"
+  }
 }

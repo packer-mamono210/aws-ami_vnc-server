@@ -21,11 +21,6 @@ jobs:
     parameters:
       ami-name:
         type: string
-      ansible-playbook-git-repo:
-        type: string
-      ansible-playbook-git-repo-version:
-        default: 'main'
-        type: string
       ssh-username:
         type: string
     steps:
@@ -51,7 +46,8 @@ jobs:
       - run:
           name: Retrieve Ansible playbook
           command: |
-            git clone "<< parameters.ansible-playbook-git-repo >>" -b "<< parameters.ansible-playbook-git-repo-version >>"
+            git clone https://github.com/ansible-playbooks-mamono210/vnc-server.git
+            git clone https://github.com/ansible-playbooks-mamono210/docker.git
       - run:
           name: Packer build
           command: |
