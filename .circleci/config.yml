@@ -92,6 +92,7 @@ workflows:
           context: AWS_OPENID_CONNECT_TOKENS
           ami-name: 'centos-stream9'
           ansible-playbook-git-repo: 'https://github.com/ansible-playbooks-mamono210/vnc-server.git'
+          ansible-playbook-git-repo-version: '5073'
           ssh-username: 'ec2-user'
           requires:
             - yamllint
